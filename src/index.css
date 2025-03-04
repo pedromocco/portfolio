@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Comfortaa:wght@300..700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-comfortaa: "Comfortaa", sans-serif;
+  --font-carter: "Carter One", sans-serif;
+}
+
+@keyframes animated-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient {
+  background: linear-gradient(270deg, #f97316, #ef4444, #8b5cf6, #22d3ee);
+  background-size: 300% 300%;
+  animation: animated-gradient 5s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+textarea:focus {
+  scrollbar-width: thin;
+  scrollbar-color: #fbbf24 #2d3748;
+}
+
+.Toastify__toast {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background: #2d3748;
+  color: white;
+}
