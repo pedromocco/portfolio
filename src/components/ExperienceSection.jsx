@@ -10,7 +10,7 @@ const ExperienceSection = () => {
 
   return (
     <section id="experiences" className="py-12 md:py-16">
-      <div className="relative max-w-4xl mx-auto max-w-full bg-zinc-900/80 border border-zinc-800 p-20 rounded-4xl">
+      <div className="relative max-w-4xl mx-auto max-w-full bg-zinc-900/80 border border-zinc-800 p-5 md:p-20 rounded-4xl">
         <motion.h2
           className="text-3xl md:text-4xl font-bold text-center text-amber-400 mb-12 md:mb-12"
           initial={{ opacity: 0, y: -20 }}
@@ -20,7 +20,7 @@ const ExperienceSection = () => {
         >
           {navbar.experiences}
         </motion.h2>
-        <div className="left-0 right-0 h-0.5 bg-amber-700 z-[1] mb-10"></div>
+        <div className="left-0 right-0 h-0.5 bg-amber-700 mb-10"></div>
 
         {experiences.map((exp, index) => (
           <motion.div
@@ -28,12 +28,12 @@ const ExperienceSection = () => {
             className={`mb-12 md:mb-16 flex ${
               index % 2 === 0 ? "justify-start" : "justify-end"
             }`}
-            initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y:50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 + index * 0.2 }}
           >
             {/* Contenido de la experiencia */}
-            <div className="relative w-11/12 md:w-3/4">
+            <div className="w-11/12 md:w-3/4">
               {/* Tarjeta de experiencia */}
               <motion.div
                 className="bg-black/50 rounded-2xl border border-white/20 p-6 md:p-8 shadow-xl"
@@ -53,7 +53,7 @@ const ExperienceSection = () => {
                       key={index}
                       whileHover={{ scale: 1.04 }}
                       transition={{ stiffness: 300 }}
-                      className="text-sm text-gray-400 bg-amber-600/20 p-1 px-3 rounded-full border border-amber-500/20 cursor-default"
+                      className="text-sm text-gray-400 md:text-md bg-amber-600/20 p-1 px-3 rounded-full border border-amber-500/20 cursor-default"
                     >
                       {tech}
                     </motion.span>
