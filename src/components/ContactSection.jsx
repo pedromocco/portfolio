@@ -45,7 +45,7 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="bg-black/20 justify-center items-center align-center text-center py-20"
+      className="bg-black/20 justify-center items-center align-center text-center py-20 md:p-20"
     >
       <motion.h2
         className="text-4xl font-bold text-center text-amber-400 mb-16"
@@ -73,8 +73,8 @@ const ContactSection = () => {
         {/* Social Media Cards */}
         <motion.div
           className="flex flex-col items-center gap-6"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
           <div className="grid grid-cols-2 gap-4 w-full">

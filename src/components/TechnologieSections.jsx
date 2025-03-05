@@ -25,7 +25,7 @@ const TechnologieSections = () => {
 
   return (
     <section id="technologies">
-      <div className="bg-black/60 p-15">
+      <div className="bg-black/60 py-15 lg:p-15">
         <motion.h2
           className="text-3xl md:text-4xl text-white font-bold text-center mb-12 md:mb-12"
           initial={{ opacity: 0, y: -20 }}
@@ -53,7 +53,7 @@ const TechnologieSections = () => {
                   <motion.li
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.5 }}
+                    viewport={{ amount: 0.5 }}
                     transition={{ delay: index * 0.2, duration: 0.5 }}
                     key={index}
                     className="flex-col items-center m-2"

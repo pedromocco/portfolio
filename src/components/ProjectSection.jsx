@@ -10,7 +10,7 @@ const ProjectSection = () => {
 
   return (
     <section id="projects">
-      <div className="p-15 mt-15">
+      <div className="py-15 md:p-15 mt-15">
         <motion.h2
           className="text-3xl md:text-4xl text-white font-bold text-center text-amber-400 mb-12 md:mb-12"
           initial={{ opacity: 0, y: -20 }}
