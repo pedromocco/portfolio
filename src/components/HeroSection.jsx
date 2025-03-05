@@ -11,7 +11,10 @@ const HeroSection = () => {
     heroTexts[language];
 
   return (
-    <section id="home" className="flex flex-col xl:flex-row justify-center text-center xl:text-left items-center mt-10 p-3">
+    <section
+      id="home"
+      className="flex flex-col xl:flex-row justify-center text-center xl:text-left items-center mt-10 p-3"
+    >
       {/* Imagen */}
       <motion.img
         variants={fadeInScale}
@@ -59,8 +62,10 @@ const HeroSection = () => {
           className="p-2 mt-3"
         >
           <span className="font-black text-amber-400">
-            3 years of experience
-          </span>{" "}
+            {language === "en"
+              ? "3 years of experience"
+              : "3 años de experiencia"}
+          </span>
           {description}
         </motion.p>
 

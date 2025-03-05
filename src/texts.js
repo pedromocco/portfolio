@@ -4,14 +4,14 @@ export const heroTexts = {
     name: "Pedro Mocco",
     title: "Web Developer",
     description:
-      "3 years of experience in web development. Productive and excited daily to learn and work.",
+      " in web development. Productive and excited daily to learn and work.",
     downloadCvButtonText: "Download CV",
   },
   es: {
     name: "Pedro Mocco",
     title: "Desarrollador Web",
     description:
-      "3 años de experiencia en desarrollo web. Productivo y emocionado diariamente por aprender y trabajar.",
+      " en desarrollo web. Productivo y emocionado diariamente por aprender y trabajar.",
     downloadCvButtonText: "Descargar CV",
   },
 };
